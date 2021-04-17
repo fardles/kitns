@@ -2,7 +2,7 @@
 
 > *KIT*s for *N*orn*S*
 
-A basic sample kit creator for norns. 
+Pronounced, "kittens" -- a basic sample kit creator for norns. 
 
 I made this as a simple utility and an exercise in coding. This is an utility that is meant to help with scripts like [gridstep](https://llllllll.co/t/gridstep-now-with-timber-ui/38559), [timber](https://llllllll.co/t/timber/21407), and [nisp](https://llllllll.co/t/nisp/27596), which give the option of loading a whole folder of samples. It's a little step forward in giving back to this wonderful community. 
 
