@@ -4,11 +4,13 @@
 
 Pronounced, "kittens" -- a basic sample kit creator for norns. 
 
-I made this as a simple utility and an exercise in coding. This is an utility that is meant to help with scripts like [gridstep](https://llllllll.co/t/gridstep-now-with-timber-ui/38559), [timber](https://llllllll.co/t/timber/21407), and [nisp](https://llllllll.co/t/nisp/27596), which give the option of loading a whole folder of samples. It's a little step forward in giving back to this wonderful community. 
+I made this as a simple utility and an exercise in coding. This is an utility that is meant to help with scripts like [gridstep](https://llllllll.co/t/gridstep-now-with-timber-ui/38559), [timber](https://llllllll.co/t/timber/21407), and [nisp](https://llllllll.co/t/nisp/27596), which give the option of loading a whole folder of samples. It's a little step forward in giving back to this wonderful community.
+
+While I was playing with nisp, I was wondering how I could build a simple kit folder without going onto the computer. I wasn't aware of a script that did this yet (I could be wrong -- in which case please let me know) so I thought it would be a good challenge to try to build one.
 
 I'm not a coder by any means, more like a code-scavenger. Credit must go to scripts like [mx.samples](https://llllllll.co/t/mx-samples/41400) (by @infinitedigits), [timber](https://llllllll.co/t/timber/21407) (by @markeats), and [nisp](https://llllllll.co/t/nisp/27596) (by @its_your_bedtime), from which I have culled much of the functionality of the script. Many thanks also to the wonderful developers who contributed to the excellent libraries on the norns, in particular,`fileselect` and `textentry`.
 
-Apart from this being hopefully useful to others, I'd be interested in getting critique and pointers for my coding. 
+Apart from this being hopefully useful to others, I'd be interested in getting critique and pointers for my coding. I hope this doesn't crash anyone's norns either. 
 
 ## Requirements
 
@@ -18,7 +20,7 @@ Apart from this being hopefully useful to others, I'd be interested in getting c
 ## Documentation
 
 1. Navigate to `PARAMS` then `EDIT`
-2. Select the option `+ Load Folder` and press K3. Navigate to the desired folder. In that folder, use E2 to highlight the first sample which you wish to load and press K3. **Note**: The samples are loaded from the selected sample and following, and any samples prior to the selected sample will not be loaded.
+2. Select the option `+ Load Folder` and press K3. Navigate to the desired folder. In that folder, use E2 to highlight the first sample which you wish to load and press K3. **Note**: The samples are loaded from the selected sample and following, and any samples prior to the selected sample will not be loaded. It also follows that no sub-folders will be loaded as well.
 3. Select the option `+ New Kit Name` and press K3. Use E3 to select which row you are editing. Use E2 to select the numbers and alphabets. Once done, use E3 to go back to the last row and select `OK`. Press K3. 
 4. Press K1 to go back to the main screen. 
 5. The first two lines of the screen show the origin and destination respectively
@@ -47,7 +49,9 @@ from maiden:
 
 ## Credits
 
-Many thanks to @markeats for the inimitable Timber, to @its_your_bedtime for nisp which set this whole thing going and for code inspiration, to @infinitedigits for parts of mx.sample that I borrowed. It's a bit weird to say so much for what is probably a trivial script to so many people here on lines, but I've been so inspired that this little script is sort of a love letter to the community, to monome, and my little norns shield. 
+Many thanks to @markeats for the inimitable Timber, to @its_your_bedtime for nisp which set this whole thing going and for code inspiration, to @infinitedigits for parts of mx.sample that I borrowed. 
+
+It's a bit weird to say so much for what is probably a trivial script to so many people here on lines, but I've been so inspired that this little script is sort of a love letter to the community, to monome, and my little norns shield. I get many warm feelings from just being in lines, and being able to contribute this little script is, I hope, just the start as I keep learning and growing.
 
 ## Postscript
 
