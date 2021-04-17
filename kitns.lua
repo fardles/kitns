@@ -16,6 +16,14 @@
 
 local NUM_SAMPLES = 99
 
+-- local sample_status = {}
+-- local STATUS = {
+--   STOPPED = 0,
+--   STARTING = 1,
+--   PLAYING = 2,
+--   STOPPING = 3
+-- }
+
 local sample_bank = {}
 sample_bank.pos = 0
 local loaded_folder = ''
@@ -23,6 +31,10 @@ local new_kit_name = nil
 local new_kit_folder = nil
 local current_sample_id = 0
 local err_msg = nil
+local saved_kit = 0
+
+-- for i = 0, NUM_SAMPLES - 1 do sample_status[i] = STATUS.STOPPED end
+
 
 local file_select_active = false
 
@@ -66,7 +78,7 @@ function init ()
   redraw()
 end
 
--- Sample loading function (borrowed from nisp and timber)
+-- Sample loading function (borrowed from nisp)
 
 function load_folder(file, add)
   
@@ -154,7 +166,7 @@ end
   -- Create new kit
   
 function create_new_kit()
-  
+  saved_kit = 0
   -- Sanitise folder and file names
   
   local new_kit_name_s = new_kit_name:gsub(" ","\\ ")
@@ -185,7 +197,7 @@ function create_new_kit()
         os.execute(cmd)
       end
     end
-    
+    saved_kit = 1
   -- if no new kit specified
   else
     print("Error: No new kit named.")
@@ -197,7 +209,6 @@ end
 -- Encoder input
 
 function enc(n,d)
-  
   if n == 2 then
     
      -- Play sample upon E2 turn reaching sample 
@@ -222,6 +233,7 @@ end
 -- Key input
 
 function key(n,z)
+  saved_kit = 0
   if err_msg == nil then
     if n == 1 then
       alt = z==1
@@ -336,6 +348,10 @@ function redraw()
     screen.text("Load sample folder in params.")
   end 
   
+  if saved_kit == 1 then
+    screen.move(120,63)
+    screen.text("S")
+  end
   screen.update()
 end
 

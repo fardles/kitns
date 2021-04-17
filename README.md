@@ -27,7 +27,7 @@ Apart from this being hopefully useful to others, I'd be interested in getting c
 6. Use E2 to scroll through the samples, which will play when highlighted. 
 7. Press K2 to select the sample for inclusion in the new kit. Selected samples are indicated by a plus sign (`+`). 
 8. Press K2 to de-select the sample. 
-9. Once you have decided which samples you wish to include, press K1 + K2. This will create a new directory with the name of the new kit and copy the samples to that folder. **Note**: if you use the same new kit name as an existing folder, it will add to the samples already inside. However, any samples with the same name will be overwritten. 
+9. Once you have decided which samples you wish to include, press K1 + K2. This will create a new directory with the name of the new kit and copy the samples to that folder. You will see an `S` in the bottom right corner of the screen when this is done. **Note**: if you use the same new kit name as an existing folder, it will add to the samples already inside. However, any samples with the same name will be overwritten. 
 
 ## To-do
 
