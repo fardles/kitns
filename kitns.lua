@@ -95,6 +95,7 @@ function load_folder(file, add)
   Timber.clear_samples(sample_id, NUM_SAMPLES - 1)
   sample_bank = {}
   sample_bank.pos = 0
+  current_sample_id = 0
 
   local split_at = string.match(file, "^.*()/")
   local folder = string.sub(file, 1, split_at)
